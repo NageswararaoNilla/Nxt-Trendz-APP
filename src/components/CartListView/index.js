@@ -7,6 +7,7 @@ const CartListView = () => (
   <CartContext.Consumer>
     {value => {
       const {cartList} = value
+
       return (
         <ul className="cart-list">
           {cartList.map(eachCartItem => (
